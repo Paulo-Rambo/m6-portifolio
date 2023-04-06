@@ -27,7 +27,7 @@ export const Project = (): JSX.Element => {
     const fetchData = async () => {
       const data: Response = await fetch(
         `https://api.github.com/users/${userData.githubUser}/repos`
-      )
+      );
 
       const json = await data.json();
 
@@ -70,7 +70,13 @@ export const Project = (): JSX.Element => {
             {repository.description}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.git_url}>
+            <ProjectLink
+              target="_blank"
+              href={`http${repository.git_url.substring(
+                3,
+                repository.git_url.length
+              )}`}
+            >
               <FaGithub /> Github Code
             </ProjectLink>
             {repository.homepage && (
