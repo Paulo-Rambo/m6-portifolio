@@ -1,3 +1,18 @@
+const repoList = [
+  {
+    "teste-frontend-football":
+      "https://www.linkedin.com/search/results/content/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADLC4XwBrp8nchfgZ88uuvnos9aTzKGS8Y0&keywords=paulo%20vitor%20ramos%20locatelli&origin=SWITCH_SEARCH_VERTICAL&position=0&searchId=20446565-daf2-47b5-84a5-43b1c74098f1&sid=bsz",
+  },
+  {
+    "mobile_weather_app_16-05-23":
+      "https://www.linkedin.com/posts/paulo-vitor-ramos-locatelli_reactnative-redux-api-activity-7065730608123002880-YdAA?utm_source=share&utm_medium=member_desktop",
+    "learning-websockets-with-DRF":
+      "https://www.linkedin.com/posts/paulo-vitor-ramos-locatelli_mais-um-aprendizado-super-legal-praticando-activity-7061697589213036544-58kd?utm_source=share&utm_medium=member_desktop",
+    "React-Native---primeiro-projeto-10-05-23":
+      "https://www.linkedin.com/posts/paulo-vitor-ramos-locatelli_aeeee-primeiro-app-feito-para-celular-utilizando-activity-7062213111520346113-kJxt?utm_source=share&utm_medium=member_desktop",
+  },
+];
+
 import {
   Project as ProjectWrapper,
   ProjectStack,

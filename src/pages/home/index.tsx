@@ -13,6 +13,7 @@ import { userData } from "@/utils/userData";
 
 // Page Style
 import {
+  Main,
   Header,
   HeaderContent,
   HeaderButtonsArea,
@@ -24,26 +25,26 @@ import {
   ProjectAreaWrapperColumns,
 } from "./style";
 
-
 export const Home = (): JSX.Element => {
   return (
-    <main>
+    <Main>
       <Header>
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+              Criando uma ponte ao mundo virtual
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              Programador, formado na Kenzie Academy Brasil, participa de muitos
+              projetos resolvendo problemas de alto nível e desenvolvendo
+              diversas habilidades. Clique em tecnologias para saber quais são
+              as mais utilizadas.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">
                 Projetos
               </Button>
-              <Button as="a" href="#tecnologias" type="btLink" color="grey5">
+              <Button as="a" href="#tecnologias" type="variant_1">
                 Tecnologias
               </Button>
             </HeaderButtonsArea>
@@ -99,6 +100,6 @@ export const Home = (): JSX.Element => {
           </ProjectAreaWrapperColumns>
         </Container>
       </ProjectsArea>
-    </main>
+    </Main>
   );
 };

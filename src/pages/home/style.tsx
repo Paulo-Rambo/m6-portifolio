@@ -4,15 +4,21 @@ import { Button } from "@/styles/Buttons";
 
 import img from "@/public/static/img/background/dots.svg";
 
+export const Main = styled("main", {});
+
 export const Header = styled("header", {
   backgroundColor: "$brand1",
-  padding: "12rem 0 8rem 0",
+  paddingTop: "12rem",
+  paddingBottom: "6rem",
   backgroundImage: `url(${img})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "bottom 1rem right 1rem",
   "@mobile": {
-    padding: "9rem 0 6rem 0",
+    paddingTop: "8rem",
+    width: "100%",
   },
+  background:
+    "linear-gradient(248deg,  rgba(81,114,206,1) 48%, rgba(38,64,139,1) 100%)",
 });
 
 export const HeaderContent = styled("div", {
@@ -21,12 +27,14 @@ export const HeaderContent = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "$2",
+  zIndex: 15,
 });
 
 export const HeaderButtonsArea = styled(Flex, {
   marginTop: "$2",
   "@mobile": {
     flexDirection: "column",
+
     [`& ${Button}`]: {
       width: "100%",
     },

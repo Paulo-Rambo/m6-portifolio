@@ -1,9 +1,19 @@
 import { styled } from "../../styles/stitches.config";
-import { Flex } from "../../styles/Global"
-import { Text } from "../../styles/Text"
+import { Flex } from "../../styles/Global";
+import { Text } from "../../styles/Text";
 
 export const Project = styled("article", {
   marginTop: "4rem",
+
+  "@mobile": {
+    width: "100%",
+    overflowX: "scroll",
+    overflowY: "hidden",
+    paddingBottom: "8px",
+    "::-webkit-scrollbar": {
+      display: "none",
+    },
+  },
 });
 
 export const ProjectStack = styled(Flex, {
@@ -30,11 +40,11 @@ export const ProjectLink = styled("a", {
   alignItems: "center",
   lineHeight: "0",
 
-  "&:hover":{
-    color: "$grey1"
+  "&:hover": {
+    color: "$grey1",
   },
 
   [`& svg`]: {
-    marginRight: "$1"
-  }
+    marginRight: "$1",
+  },
 });
